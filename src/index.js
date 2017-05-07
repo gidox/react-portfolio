@@ -1,9 +1,9 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import routes from './routes';
+import routes from 'routes';
 import { AppContainer } from 'react-hot-loader';
 
-import './theme/globalStyles';
+import 'theme/globalStyles';
 
 ReactDOM.render(
   <AppContainer>

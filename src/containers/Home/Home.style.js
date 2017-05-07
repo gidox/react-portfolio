@@ -1,4 +1,4 @@
-import styled, { css } from 'styled-components';
+import styled, {css} from 'styled-components';
 
 export const Image = styled.img `
   width: 100%;
@@ -35,14 +35,11 @@ export const RevealP = styled.p`
     left: 0;
     width: 100%;
     height: 100%;
-    background-color: black;
-
+    background-color: #000;
     transform-origin: left;
     transform: rotateY(90deg);
-
-    transition: transform 3s;
-  }
-
+    transition: transform 1s;
+  },
   ${({ hide }) => hide && css`
     &:after {
       transform: rotateY(0deg);
