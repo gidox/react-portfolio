@@ -1,9 +1,9 @@
 import React from 'react';
 
 import { Router, Route, hashHistory, IndexRoute } from 'react-router';
-import App from './containers/App';
+import App from './containers/App/App';
 
-import Home from './containers/Home';
+import Home from './containers/Home/Home';
 
 Router.prototype.componentWillReceiveProps = function(nextProps) {
   let components = [];
