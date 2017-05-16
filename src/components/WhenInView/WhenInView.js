@@ -12,7 +12,7 @@ class WhenInView extends Component {
   }
 
   onEnter({ previousPosition }){
-    if(previousPosition == Waypoint.below){
+    if(previousPosition === Waypoint.below){
       this.setState({
         isInView: true,
       });

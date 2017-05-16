@@ -29,14 +29,17 @@ export const HeroImage = styled.div `
 export const RevealP = styled.p`
   position: relative;
   &:after {
-    content: ' ';
+    content: ' showing...';
+    color:#FFF;
+    text-align:center;
+    font-size:3em;
     position: absolute;
     top: 0;
     left: 0;
     width: 100%;
     height: 100%;
     background-color: #000;
-    transform-origin: left;
+    transform-origin: center;
     transform: rotateY(90deg);
     transition: transform 1s;
   },

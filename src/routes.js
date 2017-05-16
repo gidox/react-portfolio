@@ -4,6 +4,7 @@ import { Router, Route, hashHistory, IndexRoute } from 'react-router';
 import App from './containers/App/App';
 
 import Home from './containers/Home/Home';
+import Projects from './containers/Projects/Projects';
 
 Router.prototype.componentWillReceiveProps = function(nextProps) {
   let components = [];
@@ -29,6 +30,7 @@ export default (
     <Route path="/" component={App}>
       <Route>
         <IndexRoute component={Home}/>
+        <Route path="/projects" component={Projects}></Route>
       </Route>
     </Route>
   </Router>

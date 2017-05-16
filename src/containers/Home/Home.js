@@ -1,10 +1,9 @@
 import React, { Component } from 'react';
 
 import { Container } from 'theme/grid';
-import WhenInView from 'components/WhenInView/WhenInView'
-
+import WhenInView from 'components/WhenInView/WhenInView';
+import FaBeer from 'react-icons'
 import { 
-  Image,
   HeroImage,
   RevealP,
 } from './Home.style';
@@ -17,6 +16,7 @@ class Home extends Component {
         <HeroImage>
           <h1>Arquimedes Guiland.</h1>
           <h2>Front-End Developer</h2>
+          <FaBeer />
         </HeroImage>
         <WhenInView>
           {({ isInView }) => 
