@@ -1,7 +1,12 @@
 import React, { Component } from 'react';
 import Zoomy from 'react-zoomy';
+import { ImageResponsive } from 'theme/grid';
+
 import {
   ImageButton,
+  Title,
+  TitleLink,
+  Description,
 } from './Projects.style';
 import {Container} from 'theme/grid';
 
@@ -9,13 +14,18 @@ class Projects  extends Component {
   render() {
     return (
       <Container>
-
+        <Title>Open Source Projects</Title>
+    
+        <TitleLink 
+          href="https://github.com/gidox/odata-waterline" 
+          target="_blank" 
+          rel="nofollow">Waterline Odata Pseudo Adapter</TitleLink>
         <Zoomy
-          imageUrl={'https://images.unsplash.com/photo-1487309078313-fad80c3ec1e5?dpr=2&auto=format&fit=crop&w=767&h=1023&q=80&cs=tinysrgb&crop='}
+          imageUrl={require('assets/waterline.png')}
           renderThumbnail={({ showImage }) => 
             <ImageButton              
               onClick={showImage}> 
-                <img src="http://res.cloudinary.com/responsivebreakpoints/image/upload/c_scale,w_200/v1495062031/photo-1487309078313-fad80c3ec1e5_zwrjoj.jpg" alt="pre"/>
+                <ImageResponsive src={require('assets/waterline.png')} alt="Waterline"/>
               </ImageButton>
 
           }
@@ -27,6 +37,7 @@ class Projects  extends Component {
             }
           }}
         />
+        <Description>Service to emulate OData (Open Data Protocol) with waterline orm (.net style)</Description>
       </Container>
     );
   }
