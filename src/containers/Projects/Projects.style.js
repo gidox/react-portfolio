@@ -28,7 +28,8 @@ export const TitleLink = styled.a`
   
   position: relative;
   transition: color .3s;
-  &:hover {s
+  margin-bottom:20px;
+  &:hover {
     color: ${color4};
   }
   &:after {

@@ -115,7 +115,6 @@ export const RevealDiv = styled(Div)`
   }
 `;
 export const ImageResponsive = styled.img`
-  display: block;
   margin: auto;
   max-width: 100%;
   

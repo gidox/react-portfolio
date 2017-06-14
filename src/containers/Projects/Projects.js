@@ -16,8 +16,8 @@ class Projects  extends Component {
     return (
       <Container>
         <FixedTitle>Projects</FixedTitle>
+        <FixedSubTitle>Open Source Projects:</FixedSubTitle>
         <Group>
-          <FixedSubTitle>Open Source Projects:</FixedSubTitle>
           
         
           <TitleLink 
@@ -46,8 +46,8 @@ class Projects  extends Component {
         
         
         </Group>
+        <FixedSubTitle>Portfolio:</FixedSubTitle>
         <Group>
-          <FixedSubTitle>Portfolio:</FixedSubTitle>
           
         
           <TitleLink 
@@ -55,9 +55,11 @@ class Projects  extends Component {
             target="_blank" 
             rel="nofollow">TutoEZ - Online Platform for book a tutor.</TitleLink>
           <Zoomy
+            
             imageUrl={require('assets/tutorez.png')}
             renderThumbnail={({ showImage }) => 
-              <ImageButton              
+              <ImageButton 
+                           
                 onClick={showImage}> 
                   <ImageResponsive width="20%" src={require('assets/tutorez.png')} alt="tutorez"/>
                 </ImageButton>
@@ -79,6 +81,42 @@ class Projects  extends Component {
             <li>Webpack</li>
             <li>NodeJS</li>
             <li>SailsJS</li>
+          
+          </Skills>
+
+        
+        
+        </Group>
+        <Group>
+          
+        
+          <TitleLink 
+            href="https://www.bodegasmurilloviteri.com/" 
+            target="_blank" 
+            rel="nofollow">Bodegas Murillo Viteri</TitleLink>
+          <Zoomy
+            imageUrl={require('assets/viteri.png')}
+            renderThumbnail={({ showImage }) => 
+              <ImageButton              
+                onClick={showImage}> 
+                  <ImageResponsive width="20%" src={require('assets/viteri.png')} alt="tutorez"/>
+                </ImageButton>
+
+            }
+            scale={[1.1, 1.1]}
+            imageProps={{
+              style: {
+                width: '100vw',
+                height: 'auto'
+              }
+            }}
+          />
+          <Description>
+            Ecommerce - Lead Developer: 
+          </Description>
+          <Skills>
+            <li>WooCommerce</li>
+            <li>Wordpress</li>
           
           </Skills>
 
